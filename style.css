@@ -186,6 +186,116 @@ ul li a {
   grid-column: span 2;
 }
 
+/* feature episode part style */
+#featued-episode {
+  background-color: #1a0b2e;
+  padding: 120px 0 120px 0;
+}
+
+.inner-ep {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.ep-h2 {
+  color: #ffffff;
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.episodes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.epi-card {
+  background-color: #250d44;
+  border-radius: 20px;
+  box-shadow:
+    0 20px 40px rgba(0, 0, 0, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+
+.card-written {
+  padding: 24px;
+}
+
+.video-h3 {
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+.video-p {
+  font-size: 1rem;
+  font-weight: 100;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+
+.video-span {
+  display: flex;
+  gap: 6px;
+  color: #00ff88;
+  font-weight: 600;
+  align-items: center;
+}
+
+/* Meet the host part */
+.host-h3 {
+  font-size: 3rem;
+  color: #ffffff;
+  text-align: center;
+  margin: 120px 0 40px 0;
+}
+
+.host-container {
+  display: flex;
+  /* border: 1px solid red; */
+  border-radius: 20px;
+  background-color: #250d44;
+  padding: 40px;
+  gap: 24px;
+  align-items: center;
+}
+
+.alex-h3 {
+  font-size: 2rem;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+
+.alex-p {
+  font-size: 1rem;
+  font-weight: 100;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+
+.host-logo {
+  display: flex;
+  gap: 8px;
+}
+
+.icon-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #2b1248;
+  border: 2px solid #5a3d8a;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-circle img {
+  width: 20px;
+  height: 20px;
+}
+
 @media screen and (max-width: 576px) {
   .nav-bar ul {
     display: none;
@@ -217,5 +327,28 @@ ul li a {
     grid-template-columns: 1fr;
     margin-left: 20px;
     margin-right: 20px;
+  }
+
+  .ep-h2 {
+    font-size: 2rem;
+  }
+
+  .episodes {
+    grid-template-columns: 1fr;
+  }
+
+  .host-container {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .host-logo {
+    margin-left: 70px;
+  }
+
+  .epi-card iframe {
+    width: 100%;
   }
 }
