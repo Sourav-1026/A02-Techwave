@@ -64,7 +64,7 @@ ul li a {
   color: #ffffff;
 }
 
-.nav-bar .wave {
+.wave {
   background: linear-gradient(20deg, #f7e93f, #fb09b4, #9100f8);
 
   -webkit-background-clip: text;
@@ -296,6 +296,60 @@ ul li a {
   height: 20px;
 }
 
+/* Footer part style */
+
+footer {
+  background: url(assets/footer-bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 120px 0 120px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-written {
+  max-width: 544px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.footer-h1 {
+  font-size: 3.75rem;
+  color: #ffffff;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.footer-logo {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+
+.inner-logo {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.inner-logo-p {
+  font-weight: 200;
+  color: #ffffff;
+}
+
+.footer-span {
+  text-align: center;
+  color: #ffffff;
+  font-weight: 100;
+}
+
 @media screen and (max-width: 576px) {
   .nav-bar ul {
     display: none;
@@ -350,5 +404,21 @@ ul li a {
 
   .epi-card iframe {
     width: 100%;
+  }
+
+  footer {
+    padding: 0px;
+    background-size: 200% auto;
+    background-position: c center;
+  }
+
+  .footer-h1 {
+    margin-top: 10px;
+    font-size: 2rem;
+  }
+
+  .footer-logo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
