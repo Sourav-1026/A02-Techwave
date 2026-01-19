@@ -259,6 +259,7 @@ ul li a {
 }
 
 .techwave-card {
+  background-color: rgba(53, 17, 101, 0.4);
   padding: 40px;
   border-radius: 40px;
   box-shadow:
@@ -474,11 +475,31 @@ footer {
   .hero {
     background-image: url("assets/hero-bg.png");
     background-size: cover;
-    background-position: center;
+    min-height: auto;
+    background-position: center 75%;
   }
 
   .title {
     font-size: 2.5rem;
+  }
+
+  .subtitle {
+    font-weight: 100;
+  }
+
+  .mic-wrapper {
+    width: 200px;
+    height: 200px;
+  }
+
+  .mic-wrapper::before {
+    width: 80px;
+    height: 80px;
+  }
+
+  .badge {
+    top: -6px;
+    right: -6px;
   }
 
   .podcast-written h2 {
@@ -490,6 +511,10 @@ footer {
     gap: 40px;
   }
 
+  /* .podcast-written {
+    padding: 0 5px 0 5px;
+  } */
+
   .techwave-h2 {
     font-size: 2rem;
   }
@@ -497,8 +522,22 @@ footer {
   .techwave-container {
     display: grid;
     grid-template-columns: 1fr;
-    margin-left: 20px;
-    margin-right: 20px;
+    justify-content: center;
+  }
+
+  .techwave-card {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .card1 {
+    width: 100%;
+    margin-left: 15px;
+  }
+
+  .card-last {
+    width: 100%;
+    margin-left: 15px;
   }
 
   .ep-h2 {
@@ -527,7 +566,7 @@ footer {
   footer {
     padding: 0px;
     background-size: 200% auto;
-    background-position: c center;
+    background-position: center;
   }
 
   .footer-h1 {
