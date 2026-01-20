@@ -121,6 +121,19 @@ ul li a {
   display: flex;
   align-items: center;
   justify-content: center;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .mic-wrapper::before {
@@ -154,6 +167,11 @@ ul li a {
   font-size: 1rem;
   color: #ffffff;
   font-weight: 100;
+}
+
+.btn-grp {
+  display: flex;
+  align-items: center;
 }
 
 .listen {
@@ -361,7 +379,6 @@ ul li a {
 
 .host-container {
   display: flex;
-  /* border: 1px solid red; */
   border-radius: 20px;
   background-color: #250d44;
   padding: 40px;
@@ -478,12 +495,23 @@ footer {
     background-position: center 75%;
   }
 
+  .hero-content {
+    gap: 0;
+  }
+
   .title {
     font-size: 2.5rem;
+    margin-top: 20px;
   }
 
   .subtitle {
     font-weight: 100;
+    margin: 10px 0 20px 0;
+  }
+
+  .btn-grp {
+    display: flex;
+    align-items: center;
   }
 
   .mic-wrapper {
@@ -510,8 +538,21 @@ footer {
     gap: 40px;
   }
 
+  .podcast-main {
+    padding: 50px 0 20px 0;
+  }
+
+  .cast-hr {
+    margin: 40px 0 40px 0;
+  }
+
+  #choose-techwave {
+    padding: 40px 0 40px 0;
+  }
+
   .techwave-h2 {
     font-size: 2rem;
+    margin-bottom: 40px;
   }
 
   .techwave-container {
@@ -537,6 +578,7 @@ footer {
 
   .ep-h2 {
     font-size: 2rem;
+    margin-bottom: 40px;
   }
 
   .episodes {
@@ -550,9 +592,16 @@ footer {
     margin: 0 auto;
   }
 
+  .host-h3 {
+    margin: 40px 0 20px 0;
+  }
+
   .host-logo {
-    /* margin-left: 70px; */
     justify-content: center;
+  }
+
+  #featued-episode {
+    padding: 40px 0 20px 0;
   }
 
   .epi-card iframe {
@@ -561,7 +610,6 @@ footer {
 
   footer {
     padding: 0px;
-    /* background-size: 200% auto; */
     background-position: center;
   }
 
