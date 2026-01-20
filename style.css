@@ -43,7 +43,6 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 24px;
-  /* or i guess i should use padding l/r and t/b */
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -134,8 +133,8 @@ ul li a {
 
 .badge {
   position: absolute;
-  top: 10px;
-  right: 12px;
+  top: 14px;
+  right: 22px;
 
   padding: 8px 16px;
   font-size: 1.125rem;
@@ -510,10 +509,6 @@ footer {
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
   }
-
-  /* .podcast-written {
-    padding: 0 5px 0 5px;
-  } */
 
   .techwave-h2 {
     font-size: 2rem;
