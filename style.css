@@ -556,7 +556,8 @@ footer {
   }
 
   .host-logo {
-    margin-left: 70px;
+    /* margin-left: 70px; */
+    justify-content: center;
   }
 
   .epi-card iframe {
@@ -565,7 +566,7 @@ footer {
 
   footer {
     padding: 0px;
-    background-size: 200% auto;
+    /* background-size: 200% auto; */
     background-position: center;
   }
 
